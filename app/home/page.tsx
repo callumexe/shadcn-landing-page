@@ -8,9 +8,9 @@ import { HeroSection } from "@/components/layout/sections/hero";
 import { PricingSection } from "@/components/layout/sections/pricing";
 import { ServicesSection } from "@/components/layout/sections/services";
 import { SponsorsSection } from "@/components/layout/sections/sponsors";
-import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
+// Site metadata:
 import { siteMetadata } from "@/config/siteMetadata";
 export const metadata = siteMetadata;
 
@@ -23,7 +23,6 @@ export default function Home() {
       <FeaturesSection />
       <ServicesSection />
       <TestimonialSection />
-      <TeamSection />
       <CommunitySection />
       <PricingSection />
       <ContactSection />

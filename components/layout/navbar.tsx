@@ -1,30 +1,16 @@
 "use client";
-import { ChevronsDown, Github, Menu } from "lucide-react";
 import React from "react";
-import {
-  Sheet,
-  SheetContent,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "../ui/sheet";
-import { Separator } from "../ui/separator";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "../ui/navigation-menu";
-import { Button } from "../ui/button";
 import Link from "next/link";
-import Image from "next/image";
-import { ToggleTheme } from "./toogle-theme";
+import Image from "next/image"
 
-// ✅ Import config
+import { ChevronsDown, Menu } from "lucide-react";
+
+import { Button } from "../ui/button";
+import { ToggleTheme } from "./toogle-theme";
 import { config } from "../../config/siteConfig";
+import { Sheet,  SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "../ui/sheet";
+import { Separator } from "../ui/separator";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "../ui/navigation-menu";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -132,20 +118,6 @@ export const Navbar = () => {
 
       <div className="hidden lg:flex">
         <ToggleTheme />
-
-        {config.links.map(({ href, label }) => (
-          <Button
-            key={href}
-            asChild
-            size="sm"
-            variant="ghost"
-            aria-label={`View on ${label}`}
-          >
-            <Link href={href} target="_blank">
-              <Github className="size-5" />
-            </Link>
-          </Button>
-        ))}
       </div>
     </header>
   );

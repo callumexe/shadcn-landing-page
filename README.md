@@ -54,3 +54,18 @@ npm install
 ```bash
 npm run dev
 ```
+
+5. Setup the environment
+```bash
+- File: .env.local
+# Local development API
+NEXT_PUBLIC_API_BASE=http://localhost:3000/api/v1
+
+- File: .env.production
+# Production API
+#NEXT_PUBLIC_API_BASE=http://109.106.1.51:3000/api/v1
+
+```
+
+# API Proxy
+- The API proxy is configured in next.config.js, configure it again if needed.

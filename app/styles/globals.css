@@ -8,7 +8,7 @@ html {
 
 @layer base {
   :root {
-    --background: 0 100% 97%; /* light red background */
+    --background: 0 100% 97%; /* Light red background */
     --foreground: 20 14.3% 4.1%;
 
     --card: 0 100% 97%;
@@ -17,7 +17,7 @@ html {
     --popover: 0 100% 97%;
     --popover-foreground: 20 14.3% 4.1%;
 
-    --primary: 0 85% 55%; /* pure red accent */
+    --primary: 0 85% 55%; /* Pure red accent */
     --primary-foreground: 60 9.1% 97.8%;
 
     --secondary: 0 30% 95%;
@@ -65,7 +65,7 @@ html {
 
     --border: 0 0% 0%;
     --input: 0 0% 0%;
-    --ring: 0 85% 55%; /* red rings */
+    --ring: 0 85% 55%; /* Red rings */
   }
 }
 
